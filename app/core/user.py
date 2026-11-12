@@ -7,3 +7,6 @@ class User:
         return self.username
     def set_username(self, the_name):
         self.username = the_name
+    
+    def __str__(self):
+        return f"name: {self.username}, bio: {self.bio}"
